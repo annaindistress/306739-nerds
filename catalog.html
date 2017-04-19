@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+      <header class="main-header">
+          <div class="container">
+              <a class="header-logo" href="index.html">
+                  <img src="http://placehold.it/160x65" width="160" height="65" alt="Нёрдс">
+              </a>
+              <nav class="header-navigation">
+                  <ul>
+                      <li>
+                          <a href="#">Студия</a>
+                      </li>
+                      <li>
+                          <a href="#">Клиенты</a>
+                      </li>
+                      <li class="navigation-active">
+                          <a>Магазин</a>
+                      </li>
+                      <li>
+                          <a href="#">Контакты</a>
+                      </li>
+                  </ul>
+              </nav>
+              <div class="header-cart">
+                  <a class="cart" href="#">Корзина</a>
+              </div>
+              <h1 class="page-title">Магазин готовых шаблонов</h1>
+          </div>
+      </header>
+      <main>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+              <h2 class="filter-title">Стоимость:</h2>
+              <div class="range-filter">
+                  <div class="range-controls">
+                      <div class="scale">
+                          <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                      <label class="min-price">
+                          от
+                          <input name="min-price" type="text" value="0">
+                      </label>
+                      <label class="max-price">
+                          до
+                          <input name="max-price" type="text" value="15000">
+                      </label>
+                  </div>
+              </div>
+              <h2 class="filter-title">Сетка:</h2>
+              <input type="radio" name="grid" id="grid-adaptive" value="Адаптивная" checked>
+              <label for="grid-adaptive">Адаптивная</label>
+              <input type="radio" name="grid" id="grid-fixed" value="Фиксированая">
+              <label for="grid-fixed">Фиксированная</label>
+              <input type="radio" name="grid" id="grid-reflowable" value="Резиновая">
+              <label for="grid-reflowable">Резиновая</label>
+              <h2 class="filter-title">Особенности:</h2>
+              <input type="checkbox" name="features1" id="features-slider" value="Слайдер" checked>
+              <label for="features-slider">Слайдер</label>
+              <input type="checkbox" name="features2" id="features-advantage" value="Блок преимуществ">
+              <label for="features-advantage">Блок преимуществ</label>
+              <input type="checkbox" name="features3" id="features-news" value="Новости" checked>
+              <label for="features-news">Новости</label>
+              <input type="checkbox" name="features4" id="features-gallery" value="Галерея">
+              <label for="features-gallery">Галерея</label>
+              <input type="checkbox" name="features5" id="features-cart" value="Корзина">
+              <label for="features-cart">Корзина</label>
+              <button class="btn" type="submit">Показать</button>
+          </form>
+          <div class="sort">
+              <h2 class="filter-title">Сортировать:</h2>
+              <button class="sort-by-price sort-active" type="button">По цене</button>
+              <button class="sort-by-type" type="button">По типу</button>
+              <button class="sort-by-name" type="button">По названию</button>
+              <button class="sort-by-decrease sort-active" type="button">По убыванию</button>
+              <button class="sort-by-increase" type="button">По возрастанию</button>
+          </div>
+          <div class="catalog">
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="Sedona">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">Sedona</a>
+                      <p>Информационный сайт для туристов</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="Pink App">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">Pink App</a>
+                      <p>Продуктовый лендинг приложения для iOS и Android</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="Barbershop">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">Barbershop</a>
+                      <p>Сайт салоны красоты.Для мужчин, да.</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="Mishka">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">Mishka</a>
+                      <p>Интернет-магазин вязаных игрушек</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="A Plus">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">A Plus</a>
+                      <p>Лендинг курсов повышения квалификации</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+              <article class="catalog-item">
+                  <a href="#">
+                      <img src="http://placehold.it/360x576" width="360" height="576" alt="Кваст">
+                  </a>
+                  <div class="catalog-item-hover">
+                      <a class="catalog-item-title" href="#">Кваст</a>
+                      <p>Промо-сайт производителя крафтового кваса</p>
+                      <a class="btn" href="#">9 900 руб.</a>
+                  </div>
+              </article>
+          </div>
+          <div class="pagination">
+              <a class="btn pagination-active" href="#">1</a>
+              <a class="btn" href="#">2</a>
+              <a class="btn" href="#">3</a>
+              <a class="btn" href="#">4</a>
+              <a class="btn" href="#">Следующая</a>
+          </div>
+      </main>
+      <footer class="main-footer">
+          <div class="map">
+              <img src="http://placehold.it/1440x415" width="1440" height="415" alt="Карта">
+              <div class="map-address">
+                  <h3 class="list-title">Nёrds Design Studio</h3>
+                  <p>
+                      191186, Санкт-Петербург,<br>
+                      ул. Б. Конюшенная, д. 19/8
+                  </p>
+                  <p>тел. +7 (812) 275-75-75</p>
+                  <a class="btn" href="#">Напишите нам</a>
+              </div>
+          </div>
+          <div class="container">
+              <div class="footer-social">
+                  <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                  <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                  <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+              </div>
+              <b class="footer-title">Давайте дружить, это выгодно!</b>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+      </footer>
+  </body>
+</html>
