@@ -1,3 +1,9 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 16px;
     line-height: 24px;
@@ -6,18 +12,137 @@ body {
     font-family: "Roboto", "Tahoma", sans-serif;
 }
 
-.page-title {
-    font-size: 55px;
-    line-height: 1.2;
-    color: #000000;
-    font-weight: 500;
-    font-family: "Roboto", "Tahoma", sans-serif;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.features-title {
-    font-size: 24px;
-    line-height: 30px;
-    color: #000000;
-    font-weight: 700;
-    font-family: "Roboto", "Tahoma", sans-serif;
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Хедер */
+
+.main-header {
+    margin-bottom: 80px;
+}
+
+.inner-page .main-header {
+    margin-bottom: 57px;
+}
+
+.main-header-top {
+    margin-bottom: 18px;
+}
+
+.inner-page .main-header-top {
+    margin-bottom: 75px;
+}
+
+.header-logo {
+    float: left;
+    width: 160px;
+    height: 65px;
+    margin-right: 40px;
+}
+
+.header-navigation {
+    float: left;
+    width: 560px;
+    margin: 0 40px;
+}
+
+.header-cart {
+    float: right;
+    width: 160px;
+}
+
+/* Главная страница */
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 100px;
+}
+
+.features-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.about {
+    margin-bottom: 72px;
+}
+
+.about-left {
+    float: left;
+    width: 660px;
+    margin-right: 140px;
+}
+
+.about-right {
+    float: right;
+    width: 360px;
+}
+
+.partners {
+    margin-bottom: 80px;
+}
+
+/* Каталог */
+
+.filter-form {
+    float: left;
+    width: 260px;
+    margin-right: 140px;
+}
+
+.catalog {
+    float: right;
+    width: 760px;
+}
+
+.catalog-items {
+    font-size: 0;
+}
+
+.catalog-item {
+    display: inline-block;
+    width: 360px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.pagination {
+    margin-bottom: 60px;
+}
+
+/* Футер */
+
+.map {
+    margin-bottom: 69px;
+}
+
+.footer-social {
+    float: left;
+    width: 360px;
+    margin-right: 40px;
+}
+
+.footer-discount {
+    float: left;
+    width: 560px;
+    margin-right: 40px;
 }
