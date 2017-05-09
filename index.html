@@ -10,30 +10,28 @@
   <body>
       <header class="main-header">
           <div class="container">
-              <div class="main-header-top clearfix">
+              <nav class="navigation-top clearfix">
                   <a class="header-logo">
                       <img src="img/logo-nerds.png" width="160" height="65" alt="Нёрдс">
                   </a>
-                  <nav class="header-navigation">
-                      <ul>
-                          <li>
-                              <a href="#">Студия</a>
-                          </li>
-                          <li>
-                              <a href="#">Клиенты</a>
-                          </li>
-                          <li>
-                              <a href="catalog.html">Магазин</a>
-                          </li>
-                          <li>
-                              <a href="#">Контакты</a>
-                          </li>
-                      </ul>
-                  </nav>
+                  <ul class="header-menu">
+                      <li>
+                          <a href="#">Студия</a>
+                      </li>
+                      <li>
+                          <a href="#">Клиенты</a>
+                      </li>
+                      <li>
+                          <a href="catalog.html">Магазин</a>
+                      </li>
+                      <li>
+                          <a href="#">Контакты</a>
+                      </li>
+                  </ul>
                   <div class="header-cart">
                       <a class="cart" href="#">Корзина</a>
                   </div>
-              </div>
+              </nav>
               <div class="slider">
                   <input type="radio" name="toggle" id="btn-1" checked>
                   <input type="radio" name="toggle" id="btn-2">
@@ -45,25 +43,22 @@
                   </div>
                   <div class="slides">
                       <div class="slide">
-                          <div class="slide-text">
-                              <div class="slide-title">Долго, дорого, скрупулезно.</div>
-                              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                              <a class="btn" href="#">Узнать больше</a>
-                          </div>
+                          <div class="slide-title">Долго, дорого, скрупулезно.</div>
+                          <p>
+                              Математически выверенный дизайн<br>
+                              для вашего сайта или мобильного приложения.
+                          </p>
+                          <a class="btn" href="#">Узнать больше</a>
                       </div>
                       <div class="slide">
-                          <div class="slide-text">
-                              <div class="slide-title">Любим математику как никто другой</div>
-                              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                              <a class="btn" href="#">Узнать больше</a>
-                          </div>
+                          <div class="slide-title">Любим математику как никто другой</div>
+                          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                          <a class="btn" href="#">Узнать больше</a>
                       </div>
                       <div class="slide">
-                          <div class="slide-text">
-                              <div class="slide-title">Только ночь, только хардкор</div>
-                              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                              <a class="btn" href="#">Узнать больше</a>
-                          </div>
+                          <div class="slide-title">Только ночь, только хардкор</div>
+                          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                          <a class="btn" href="#">Узнать больше</a>
                       </div>
                   </div>
               </div>
@@ -71,17 +66,17 @@
       </header>
       <main class="container">
           <div class="features clearfix">
-              <div class="features-item">
+              <div class="feature-item">
                   <h2 class="feature-title">Веб-сайты</h2>
                   <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                   <a class="btn" href="#">Заказать</a>
               </div>
-              <div class="features-item">
+              <div class="feature-item">
                   <h2 class="feature-title">Приложения</h2>
                   <p>Покорите топ-10 приложений в AppStore и Google Play</p>
                   <a class="btn" href="#">Заказать</a>
               </div>
-              <div class="features-item">
+              <div class="feature-item">
                   <h2 class="feature-title">Презентации</h2>
                   <p>Вы даже не подозреваете, насколько вы изумительны!</p>
                   <a class="btn" href="#">Заказать</a>
@@ -89,7 +84,7 @@
           </div>
           <div class="about clearfix">
               <div class="about-left">
-                  <b class="about-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+                  <b class="about-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                   <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
                   <h3 class="list-title">Выполняем заказы на разработку:</h3>
                   <ul>
@@ -101,16 +96,16 @@
               <div class="about-right">
                   <img class="about-logo" src="img/logo-nerds-about.png" width="360" height="208" alt="Нёрдс">
                   <h3 class="list-title">с 2004 года любим точность во всем:</h3>
-                  <ul>
-                      <li>
+                  <ul class="clearfix">
+                      <li class="about-right-list-item">
                           <span class="about-percent">146</span>
                           Уровень самоотдачи
                       </li>
-                      <li>
+                      <li class="about-right-list-item">
                           <span class="about-percent">100</span>
                           Соблюдение сроков
                       </li>
-                      <li>
+                      <li class="about-right-list-item">
                           <span class="about-percent">50</span>
                           Минимальная предоплата
                       </li>
@@ -120,23 +115,27 @@
           <div class="partners clearfix">
               <ul>
                   <li>
-                      <a href="https://htmlacademy.ru/intensive/htmlcss">
+                      <a class="partners-link partners-link-ha" href="https://htmlacademy.ru/intensive/htmlcss">
                           <img src="img/logo-htmlacademy.png" width="199" height="68" alt="HTML Academy">
+                          HTML Academy
                       </a>
                   </li>
                   <li>
-                      <a href="#">
+                      <a class="partners-link partners-link-bb" href="#">
                           <img src="img/logo-borodinski.png" width="209" height="87" alt="Barbershop Borodinski">
+                          Barbershop Borodinski
                       </a>
                   </li>
                   <li>
-                      <a href="#">
+                      <a class="partners-link  partners-link-pi" href="#">
                           <img src="img/logo-pink.png" width="185" height="52" alt="Pink">
+                          Pink
                       </a>
                   </li>
                   <li>
-                      <a href="#">
+                      <a class="partners-link partners-link-mi" href="#">
                           <img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
+                          Mishka
                       </a>
                   </li>
               </ul>
@@ -146,7 +145,7 @@
           <div class="map">
               <img src="img/map.jpg" width="1440" height="415" alt="Карта">
               <div class="map-address">
-                  <h3 class="list-title">Nёrds Design Studio</h3>
+                  <h3 class="map-address-title">Nёrds Design Studio</h3>
                   <p>
                       191186, Санкт-Петербург,<br>
                       ул. Б. Конюшенная, д. 19/8
@@ -171,12 +170,16 @@
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <h2 class="modal-content-title">Напишите нам</h2>
           <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="application name">Ваше имя:</label>
-              <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="application-name">
-              <label for="application-email">Ваш e-mail:</label>
-              <input type="email" name="email" placeholder="Для отправки ответа" id="application-email">
-              <label for="application-text">Текст письма:</label>
-              <textarea name="text" placeholder="В свободной форме" id="application-text"></textarea>
+              <label class="application-form-name-label" for="application-name">
+                  Ваше имя:
+                  <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="application-name">
+              </label>
+              <label class="application-form-email-label" for="application-email">
+                  Ваш e-mail:
+                  <input type="email" name="email" placeholder="Для отправки ответа" id="application-email">
+              </label>
+              <label class="application-form-text-label" for="application-text">Текст письма:</label>
+              <textarea name="text" placeholder="В свободной форме" rows="5" id="application-text"></textarea>
               <button class="btn" type="submit">Отправить</button>
           </form>
       </div>
