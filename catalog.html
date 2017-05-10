@@ -22,7 +22,7 @@
                           <a href="#">Клиенты</a>
                       </li>
                       <li>
-                          <a href="catalog.html">Магазин</a>
+                          <a class="header-active">Магазин</a>
                       </li>
                       <li>
                           <a href="#">Контакты</a>
@@ -64,15 +64,15 @@
                   <ul>
                       <li>
                           <input type="radio" name="grid" id="grid-adaptive" value="Адаптивная" checked>
-                          <label for="grid-adaptive">Адаптивная</label>
+                          <label class="layout-filter-label" for="grid-adaptive">Адаптивная</label>
                       </li>
                       <li>
                           <input type="radio" name="grid" id="grid-fixed" value="Фиксированая">
-                          <label for="grid-fixed">Фиксированная</label>
+                          <label class="layout-filter-label" for="grid-fixed">Фиксированная</label>
                       </li>
                       <li>
                           <input type="radio" name="grid" id="grid-reflowable" value="Резиновая">
-                          <label for="grid-reflowable">Резиновая</label>
+                          <label class="layout-filter-label" for="grid-reflowable">Резиновая</label>
                       </li>
                   </ul>
               </fieldset>
@@ -81,23 +81,23 @@
                   <ul>
                       <li>
                           <input type="checkbox" name="species1" id="species-slider" value="Слайдер" checked>
-                          <label for="species-slider">Слайдер</label>
+                          <label class="species-filter-label" for="species-slider">Слайдер</label>
                       </li>
                       <li>
                           <input type="checkbox" name="species2" id="species-advantage" value="Блок преимуществ">
-                          <label for="species-advantage">Блок преимуществ</label>
+                          <label class="species-filter-label" for="species-advantage">Блок преимуществ</label>
                       </li>
                       <li>
                           <input type="checkbox" name="species3" id="species-news" value="Новости" checked>
-                          <label for="species-news">Новости</label>
+                          <label class="species-filter-label" for="species-news">Новости</label>
                       </li>
                       <li>
                           <input type="checkbox" name="species4" id="species-gallery" value="Галерея">
-                          <label for="species-gallery">Галерея</label>
+                          <label class="species-filter-label" for="species-gallery">Галерея</label>
                       </li>
                       <li>
                           <input type="checkbox" name="species5" id="species-cart" value="Корзина">
-                          <label for="species-cart">Корзина</label>
+                          <label class="species-filter-label" for="species-cart">Корзина</label>
                       </li>
                   </ul>
               </fieldset>
@@ -184,7 +184,7 @@
           <div class="map">
               <img src="img/map.jpg" width="1440" height="415" alt="Карта">
               <div class="map-address">
-                  <h3 class="list-title">Nёrds Design Studio</h3>
+                  <h3 class="map-address-title">Nёrds Design Studio</h3>
                   <p>
                       191186, Санкт-Петербург,<br>
                       ул. Б. Конюшенная, д. 19/8
@@ -199,8 +199,10 @@
                   <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                   <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
               </div>
-              <b class="footer-title">Давайте дружить, это выгодно!</b>
-              <p>Скидка 10% для друзей из социальных сетей.</p>
+              <div class="footer-discount" >
+                  <b class="footer-title">Давайте дружить, это выгодно!</b>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+              </div>
           </div>
       </footer>
   </body>
