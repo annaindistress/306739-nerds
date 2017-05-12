@@ -40,6 +40,7 @@ body {
     font-weight: 500;
     line-height: 18px;
     display: inline-block;
+    vertical-align: top;
     padding-top: 17px;
     padding-right: 40px;
     padding-bottom: 15px;
@@ -162,6 +163,7 @@ body {
     line-height: 30px;
     position: relative;
     display: inline-block;
+    vertical-align: top;
     padding: 26px 1px;
     padding-left: 60px;
     vertical-align: top;
@@ -229,6 +231,7 @@ body {
 .slider-controls label {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 18px;
     margin: 0 7px;
@@ -532,6 +535,7 @@ body {
     font-size: 16px;
     line-height: 18px;
     display: inline-block;
+    vertical-align: top;
     width: 119px;
     vertical-align: top;
 }
@@ -587,6 +591,7 @@ body {
 .partners li {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     height: 136px;
     padding-top: 46px;
     vertical-align: middle;
@@ -718,6 +723,7 @@ body {
     font-size: 20px;
     line-height: 22px;
     display: inline-block;
+    vertical-align: top;
     width: 50%;
 }
 
@@ -837,6 +843,19 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 .filter-form .btn {
     padding-right: 90px;
     padding-left: 88px;
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.filter-form .btn:hover {
+    color: #000000;
+    background-color: #dfdfdf;
+}
+
+.filter-form .btn:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.1);
 }
 
 /* ==========================================================================
@@ -871,6 +890,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     font-weight: 400;
     line-height: 18px;
     display: inline-block;
+    vertical-align: top;
     padding-top: 4px;
     padding-right: 26px;
     text-decoration: none;
@@ -879,27 +899,40 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     color: #000000;
 }
 
-.sort .sort-active {
-    opacity: 1;
-}
-
-.sort::before {
+.sort .sort-by-decrease {
     position: absolute;
-    top: 7px;
-    right: -33px;
-    content: "";
+    top: 6px;
+    right: -32px;
+    padding: 0;
+    font-size: 0;
     border: 5px solid transparent;
-    border-top: 10px solid #000000;
-}
-
-.sort::after {
-    position: absolute;
-    top: 1px;
-    right: -62px;
-    content: "";
+    border-top: 11px solid #000000;
     opacity: 0.2;
+}
+
+.sort .sort-by-increase {
+    position: absolute;
+    top: -18px;
+    right: -62px;
+    padding: 0;
+    font-size: 0;
     border: 5px solid transparent;
-    border-bottom: 10px solid #000000;
+    border-bottom: 11px solid #000000;
+    opacity: 0.2;
+}
+
+.sort a:hover {
+    opacity: 0.6;
+}
+
+.sort .sort-by-decrease:hover,
+.sort .sort-by-increase:hover {
+    opacity: 0.4;
+}
+
+.sort a:focus,
+.sort a.sort-active {
+    opacity: 1;
 }
 
 .catalog-items {
@@ -910,6 +943,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 .catalog-item {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 358px;
     margin-right: 40px;
     margin-bottom: 34px;
@@ -956,11 +990,14 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     bottom: 0;
     left: 0;
     display: none;
+    overflow: scroll;
     width: 100%;
-    padding: 29px 0 24px;
+    max-height: 400px;
+    padding: 29px 0 44px;
     text-align: center;
     background-color: #eeeeee;
 }
+
 
 .catalog-item-title {
     font-size: 18px;
@@ -988,6 +1025,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 
 .catalog-item-popup .btn {
     display: inline-block;
+    vertical-align: top;
     padding-right: 61px;
     padding-left: 59px;
 }
@@ -1001,7 +1039,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 }
 
 .pagination {
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 }
 
 .pagination .btn {
@@ -1037,18 +1075,20 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 .map {
     position: relative;
     margin-bottom: 62px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .map img {
     width: 1440px;
     height: 415px;
-    background-color: #b5b5b5;
 }
 
 .map-address {
     position: absolute;
     top: 54px;
     left: 103px;
+    max-width: 319px;
     padding: 51px 50px 47px 50px;
     background-color: #ffffff;
 }
@@ -1079,10 +1119,11 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 }
 
 /* ==========================================================================
-    ФУТЕР
+    ФУТЕР - ПРОВЕРЕНО
    ========================================================================== */
 
 .main-footer {
+    position: relative;
     padding-bottom: 100px;
 }
 
@@ -1096,6 +1137,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     font-size: 0;
     position: relative;
     display: inline-block;
+    vertical-align: top;
     width: 79px;
     height: 79px;
     margin-right: 8px;
@@ -1177,179 +1219,142 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     МОДАЛЬНОЕ ОКНО
    ========================================================================== */
 
-.modal-content
-{
+.modal-content {
     position: absolute;
     z-index: 100;
-    top: 50%;
-    left: 50%;
-
+    top: calc(50% - 469px);
+    left: calc(50% - 480px);
     display: none;
-
     box-sizing: border-box;
     width: 960px;
     height: 590px;
     padding: 67px 100px;
-
-    transform: translate(-50%);
-
-    background-color: #fff;
-    box-shadow: 0 16px 45px 0 rgba(0, 0, 0, .75);
+    background-color: #ffffff;
+    box-shadow: 0 16px 45px 0 rgba(0, 0, 0, 0.75);
 }
 
-.modal-content-close
-{
+.modal-content-close {
     font-size: 0;
-
     position: absolute;
     top: 78px;
     right: 90px;
-
     width: 21px;
     height: 21px;
-
     cursor: pointer;
-
     border: 0;
     background-color: transparent;
 }
 
 .modal-content-close::before,
-.modal-content-close::after
-{
+.modal-content-close::after {
     position: absolute;
     top: -3px;
     left: 8px;
-
     width: 5px;
     height: 27px;
-
-    content: '';
-
+    content: "";
     background-color: #fecccd;
 }
 
-.modal-content-close::before
-{
+.modal-content-close::before {
     transform: rotate(45deg);
 }
 
-.modal-content-close::after
-{
+.modal-content-close::after {
     transform: rotate(-45deg);
 }
 
 .modal-content-close:hover::before,
-.modal-content-close:hover::after
-{
+.modal-content-close:hover::after {
     background-color: #fb565a;
 }
 
 .modal-content-close:active::before,
-.modal-content-close:active::after
-{
+.modal-content-close:active::after {
     background-color: #fee;
 }
 
-.modal-content-title
-{
+.modal-content-title {
     font-size: 45px;
     font-weight: 500;
     line-height: 45px;
-
     margin: 0;
     margin-bottom: 42px;
 }
 
-.application-form label
-{
+.application-form label {
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
 }
 
-.application-form-name-label
-{
+.application-form-name-label {
     float: left;
-
     width: 360px;
     margin-right: 38px;
 }
 
-.application-form-email-label
-{
+.application-form-email-label {
     float: right;
-
     width: 360px;
 }
 
-.application-form input
-{
-    font-family: 'Roboto', 'Tahoma', sans-serif;
+.application-form input {
+    font-family: "Roboto", "Tahoma", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-
     width: 330px;
     margin-top: 8px;
     margin-bottom: 35px;
     padding: 15px 13px 13px;
-
-    color: rgba(68, 68, 68, .5);
+    color: rgba(68, 68, 68, 0.5);
     border: 2px solid #d7dcde;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
-.application-form-text-label
-{
+.application-form-text-label {
     display: block;
     clear: both;
-
     margin-bottom: 8px;
 }
 
-.application-form textarea
-{
-    font-family: 'Roboto', 'Tahoma', sans-serif;
+.application-form textarea {
+    font-family: "Roboto", "Tahoma", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-
     width: 732px;
     margin-bottom: 39px;
     padding: 12px;
-
     resize: none;
-
-    color: rgba(68, 68, 68, .5);
+    color: rgba(68, 68, 68, 0.5);
     border: 2px solid #d7dcde;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
-.application-form .btn
-{
-    padding: 17px 87px 15px 82px;
+.application-form .btn {
+    padding-right: 87px;
+    padding-left: 82px;
 }
+
 
 .application-form input:hover,
-.application-form textarea:hover
-{
-    color: rgba(68, 68, 68, .5);
+.application-form textarea:hover {
+    color: rgba(68, 68, 68, 0.5);
     border-color: #b4b9bb;
 }
 
 .application-form input:focus,
-.application-form textarea:focus
-{
-    color: rgba(68, 68, 68, 1);
-    border-color: #000;
+.application-form textarea:focus {
+    color: #454545;
+    border-color: #000000;
 }
 
 .application-form input:invalid,
-.application-form textarea:invalid
-{
+.application-form textarea:invalid {
     color: #e74246;
     border-color: #e74246;
 }

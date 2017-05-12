@@ -11,7 +11,7 @@
       <header class="main-header">
           <div class="container">
               <nav class="navigation-top clearfix">
-                  <a class="header-logo">
+                  <a class="header-logo" href="index.html">
                       <img src="img/logo-nerds.png" width="160" height="65" alt="Нёрдс">
                   </a>
                   <ul class="header-menu">
@@ -109,6 +109,8 @@
                   <a class="sort-by-price sort-active" href="#">По цене</a>
                   <a class="sort-by-type" href="#">По типу</a>
                   <a class="sort-by-name" href="#">По названию</a>
+                  <a class="sort-by-decrease sort-active" href="#">От большего к меньшему</a>
+                  <a class="sort-by-increase" href="#">От меньшего к большему</a>
               </div>
               <div class="catalog-items">
                   <article class="catalog-item">
@@ -137,7 +139,7 @@
                       </a>
                       <div class="catalog-item-popup">
                           <a class="catalog-item-title" href="#">Barbershop</a>
-                          <p>Сайт салоны красоты.Для мужчин, да.</p>
+                          <p>Сайт салоны красоты. Для мужчин, да.</p>
                           <a class="btn" href="#">9 900 руб.</a>
                       </div>
                   </article>
@@ -181,6 +183,23 @@
           </div>
       </main>
       <footer class="main-footer">
+          <div class="modal-content">
+              <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+              <h2 class="modal-content-title">Напишите нам</h2>
+              <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="application-form-name-label" for="application-name">
+                      Ваше имя:
+                      <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="application-name">
+                  </label>
+                  <label class="application-form-email-label" for="application-email">
+                      Ваш e-mail:
+                      <input type="email" name="email" placeholder="Для отправки ответа" id="application-email">
+                  </label>
+                  <label class="application-form-text-label" for="application-text">Текст письма:</label>
+                  <textarea name="text" placeholder="В свободной форме" rows="5" id="application-text"></textarea>
+                  <button class="btn" type="submit">Отправить</button>
+              </form>
+          </div>
           <div class="map">
               <img src="img/map.jpg" width="1440" height="415" alt="Карта">
               <div class="map-address">
@@ -193,7 +212,7 @@
                   <a class="btn" href="#">Напишите нам</a>
               </div>
           </div>
-          <div class="container">
+          <div class="container clearfix">
               <div class="footer-social">
                   <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                   <a class="social-btn social-btn-fb" href="#">Фейсбук</a>

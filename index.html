@@ -142,6 +142,23 @@
           </div>
       </main>
       <footer class="main-footer">
+          <div class="modal-content">
+              <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+              <h2 class="modal-content-title">Напишите нам</h2>
+              <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="application-form-name-label" for="application-name">
+                      Ваше имя:
+                      <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="application-name">
+                  </label>
+                  <label class="application-form-email-label" for="application-email">
+                      Ваш e-mail:
+                      <input type="email" name="email" placeholder="Для отправки ответа" id="application-email">
+                  </label>
+                  <label class="application-form-text-label" for="application-text">Текст письма:</label>
+                  <textarea name="text" placeholder="В свободной форме" rows="5" id="application-text"></textarea>
+                  <button class="btn" type="submit">Отправить</button>
+              </form>
+          </div>
           <div class="map">
               <img src="img/map.jpg" width="1440" height="415" alt="Карта">
               <div class="map-address">
@@ -166,22 +183,5 @@
               </div>
           </div>
       </footer>
-      <div class="modal-content">
-          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-          <h2 class="modal-content-title">Напишите нам</h2>
-          <form class="application-form" action="https://echo.htmlacademy.ru" method="post">
-              <label class="application-form-name-label" for="application-name">
-                  Ваше имя:
-                  <input type="text" name="name" placeholder="Представьтесь, пожалуйста" id="application-name">
-              </label>
-              <label class="application-form-email-label" for="application-email">
-                  Ваш e-mail:
-                  <input type="email" name="email" placeholder="Для отправки ответа" id="application-email">
-              </label>
-              <label class="application-form-text-label" for="application-text">Текст письма:</label>
-              <textarea name="text" placeholder="В свободной форме" rows="5" id="application-text"></textarea>
-              <button class="btn" type="submit">Отправить</button>
-          </form>
-      </div>
   </body>
 </html>
