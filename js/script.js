@@ -8,8 +8,6 @@ var formText = popup.querySelector("[name=form-text]");
 var storageName = localStorage.getItem("formName");
 var storageEmail = localStorage.getItem("formEmail");
 
-
-
 link.addEventListener("click", function(event) {
     event.preventDefault();
     popup.classList.add("modal-content-show");
