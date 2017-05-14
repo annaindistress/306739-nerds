@@ -66,7 +66,7 @@ body {
 }
 
 .navigation-top {
-    margin-bottom: 61px;
+    margin-bottom: 1px;
     padding-top: 49px;
 }
 
@@ -194,6 +194,7 @@ body {
 
 .slider {
     position: relative;
+    padding-top: 60px;
 }
 
 .slider input[type="radio"] {
@@ -239,7 +240,7 @@ body {
 }
 
 .slide:nth-child(1)::after {
-    top: -60px;
+    top: 0px;
     right: 31px;
     width: 698px;
     height: 413px;
@@ -247,7 +248,7 @@ body {
 }
 
 .slide:nth-child(2)::after {
-    top: -77px;
+    top: -17px;
     right: 1px;
     width: 663px;
     height: 430px;
@@ -255,7 +256,7 @@ body {
 }
 
 .slide:nth-child(3)::after {
-    top: -59px;
+    top: 1px;
     right: 0;
     width: 759px;
     height: 411px;
