@@ -240,7 +240,7 @@ body {
 }
 
 .slide:nth-child(1)::after {
-    top: 0px;
+    bottom: 0;
     right: 31px;
     width: 698px;
     height: 413px;
