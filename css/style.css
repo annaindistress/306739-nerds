@@ -237,10 +237,10 @@ body {
     position: absolute;
     display: block;
     content: "";
+    bottom: 0;
 }
 
 .slide:nth-child(1)::after {
-    bottom: 0;
     right: 31px;
     width: 698px;
     height: 413px;
@@ -248,7 +248,6 @@ body {
 }
 
 .slide:nth-child(2)::after {
-    top: -17px;
     right: 1px;
     width: 663px;
     height: 430px;
@@ -256,7 +255,6 @@ body {
 }
 
 .slide:nth-child(3)::after {
-    top: 1px;
     right: 0;
     width: 759px;
     height: 411px;
