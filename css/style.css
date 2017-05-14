@@ -872,7 +872,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 
 .sort .sort-by-increase {
     position: absolute;
-    top: -18px;
+    bottom: 8px;
     right: -62px;
     padding: 0;
     font-size: 0;
