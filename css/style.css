@@ -154,7 +154,6 @@ body {
     vertical-align: top;
     padding: 26px 1px;
     padding-left: 60px;
-    vertical-align: top;
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
@@ -220,7 +219,6 @@ body {
     height: 18px;
     margin: 0 7px;
     cursor: pointer;
-    vertical-align: top;
     border-radius: 50%;
     background-color: #ffffff;
 }
@@ -511,7 +509,6 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 119px;
-    vertical-align: top;
 }
 
 .about-percent {
@@ -561,7 +558,6 @@ body {
 .partners li {
     position: relative;
     display: inline-block;
-    vertical-align: top;
     height: 136px;
     padding-top: 46px;
     vertical-align: middle;
@@ -834,7 +830,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 .sort {
     font-size: 0;
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
 }
 
 .filter-title {
@@ -912,7 +908,6 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     margin-right: 40px;
     margin-bottom: 34px;
     padding-top: 40px;
-    vertical-align: top;
     border: 1px solid #e5e5e5;
     border-radius: 3px 3px 0 0;
 }
@@ -957,11 +952,10 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     overflow: scroll;
     width: 100%;
     max-height: 400px;
-    padding: 29px 0 44px;
+    padding: 29px 0 43px;
     text-align: center;
     background-color: #eeeeee;
 }
-
 
 .catalog-item-title {
     font-size: 18px;
@@ -1003,7 +997,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 }
 
 .pagination {
-    margin-bottom: 64px;
+    margin-bottom: 61px;
 }
 
 .pagination .btn {
@@ -1039,7 +1033,8 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     overflow: hidden;
     width: 100%;
     height: 416px;
-    margin-bottom: 62px;
+    margin-bottom: 69px;
+    background-color: #b5b5b5;
     background-image: url("../img/map.jpg");
 }
 
@@ -1101,7 +1096,6 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     width: 79px;
     height: 79px;
     margin-right: 8px;
-    vertical-align: top;
     text-decoration: none;
     border-radius: 50%;
     background-color: #e1e1e1;
