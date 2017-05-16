@@ -70,6 +70,10 @@ body {
     padding-top: 49px;
 }
 
+.inner-page .navigation-top {
+    margin-bottom: 61px;
+}
+
 .header-logo {
     float: left;
     width: 160px;
@@ -946,14 +950,19 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
 .catalog-item-popup {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -1px;
     display: none;
     overflow: scroll;
-    width: 100%;
+    width: 360px;
     max-height: 400px;
     padding: 29px 0 43px;
     text-align: center;
     background-color: #eeeeee;
+}
+
+.catalog-item:nth-child(5) .catalog-item-popup,
+.catalog-item:nth-child(6) .catalog-item-popup {
+    bottom: -9px;
 }
 
 .catalog-item-title {
@@ -970,14 +979,16 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    width: 240px;
+    width: 200px;
     margin: 0 auto;
     margin-bottom: 29px;
     color: #666666;
 }
 
-.catalog-item:first-child p {
-    width: 200px;
+.catalog-item:nth-child(2) p,
+.catalog-item:nth-child(5) p,
+.catalog-item:nth-child(6) p{
+    width: 240px;
 }
 
 .catalog-item-popup .btn {
