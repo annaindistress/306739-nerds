@@ -952,7 +952,7 @@ input[type="checkbox"].disabled + .species-filter-label:hover::before {
     bottom: 0;
     left: -1px;
     display: none;
-    overflow: scroll;
+    overflow: auto;
     width: 360px;
     max-height: 400px;
     padding: 29px 0 43px;
